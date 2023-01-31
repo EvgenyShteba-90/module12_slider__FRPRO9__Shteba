@@ -1,0 +1,376 @@
+/* ! MEDIA */
+
+@media only screen and (max-width: 375px) {
+
+    .container {
+        width: 375px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    /* ! HEADER */
+
+    header .header__inner, 
+    .header__button {
+        display: none;
+    }
+    .header__telephone {
+        margin-right: 30px;
+    }
+
+    /* ! MAINSCREEN */
+
+    .main-screen {
+        background-size: 100% 100%;
+        object-fit: cover;
+        padding-bottom: 50px;
+    }
+    .main-screen__title-text {
+        font-size: 23px;
+        line-height: 31px;
+        margin-left: 20px;
+    }
+    .title-text__color-orange {
+        font-size: 23px;
+        line-height: 31px;
+    }
+    .main-screen__title {
+        margin-top: 50px;
+    }
+    .main-screen__paragraph-text {
+        font-size: 14px;
+        line-height: 19px;
+        margin-left: 20px;
+        margin-bottom: 40px;
+    }
+    .main-screen__button {
+        display: flex;
+        flex-direction: column;
+    }
+    .main-screen__button-calc,
+    .main-screen__button-submit {
+        margin-bottom: 20px;
+        width: 335px;
+        height: 51px;
+    }
+
+    /* ! SLIDER */
+
+    .slider__arrows {
+        display: none;
+    }
+    .slider-desktop {
+        display: none;
+    }
+    .slider__completed-projects {
+        margin-left: 20px;
+    }
+    .slider__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .slider__title {
+        font-size: 22px;
+        line-height: 38px;
+        margin-left: 85px;
+        margin-top: -20px;
+    }
+    .slider {
+        padding-top: 0px;
+    }
+    .sleder__paragraph {
+        font-size: 10px;
+        line-height: 17px;
+        margin-left: 5px;
+        margin-right: 20px;
+    }
+    .project-parameters {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 1fr 1fr;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    .project-parameter__title {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .project-parameter__description {
+        font-size: 11px;
+        line-height: 15px;
+    }
+
+    /* ! ONLINE CONTROL */
+
+    .online-control {
+        background: #131313;
+    }
+    .online-control__video {
+        width: 340px;
+        height: 207px;
+        margin-top: 40px;
+    }
+    .online-control__wrapper {
+        margin-left: -25px;
+    }
+    .video-img {
+        width: 340px;
+        height: 207px;
+    }
+    .video__play-button {
+        top: -130px;
+    }
+    
+    .online-control__play-button {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .vector-play {
+        width: 50%;
+        height: 50%;
+        margin-left: 5px;
+    }
+    .online-control__break-line {
+        margin-top: 40px;
+    }
+    .online-control__paragraph {
+        font-size: 9px;
+        line-height: 16px;
+        color: #FFFFFF;
+        margin: 20px;
+    }
+    .form__inner {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .form__input-wrapper {
+        width: 330px;
+        margin-top: 50px;
+        margin-left: 90px;
+    }
+    .form__label {
+        font-size: 13px;
+        line-height: 21px;
+        color: rgba(255, 255, 255, 0.5);
+    }
+    .form__input {
+        font-size: 14px;
+        line-height: 19px;
+        color: #FFFFFF;
+        background-color: #131313;
+    }
+    .form__button-color {
+        width: 330px;
+        position: absolute;
+        top: 1765px;
+        left: 19px;
+    }
+    .online-control__checkbox {
+        margin-top: 20px;
+        padding-bottom: 80px;
+    }
+    .online-control__text {
+        font-size: 10px;
+        line-height: 18px;
+        color: #FFFFFF;
+    }
+
+    /* ! TYPES OF REPAIR */
+
+    .types-of-repair {
+        margin-top: 50px;
+    }
+    .types-of-repair__title {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .example-cards {
+        margin-left: 5px;
+        margin-right: 20px;
+    }
+    .example-cards__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .example-card__image {
+        width: 330px;
+    }
+    .example-card__description {
+        margin-left: -15px;
+        width: 270px;
+        margin-bottom: 40px;
+    }
+    .example-card__title {
+        font-size: 15px;
+        line-height: 19px;
+    }
+    .repair-list__item {
+        font-size: 13px;
+        line-height: 17px;
+    }
+    .example-card__price {
+        width: 190px;
+        margin-top: 80px;
+    }
+    .request {
+        display: none;
+    }
+    .pig-image {
+        display: none;
+    }
+    .selector__list,
+    .fantasies__images {
+        display: none;
+    }
+    .fantasies {
+        background-image: none;
+        margin-top: -10px;
+    }
+    .fantasies__wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    .selector__title {
+        font-size: 20px;
+        line-height: 28px;
+        margin-left: 0px;
+        margin-top: -20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .selector__title::after {
+        content: "";
+        display: block;
+        width: 340px;
+        height: 242px;
+        background-image: url(../img/fantasies/background.png);
+        background-size: 100% 100%;
+        object-fit: fill;
+        margin-top: 30px;
+        margin-left: -30px;
+        position: relative;
+        z-index: 3;
+    }
+
+    /* ! OUR CLIENTS */
+
+    .our-clients__client-cards,
+    .our-clients__title,
+    .our-clients__icon,
+    .our-clients__statistic,
+    .our-clients__back,
+    .client__space-and-time {
+        display: none;
+        margin: 0;
+    }
+    .our-clients {
+        margin-top: -550px;
+        background-color: #131313;
+    }
+    .any-question-form {
+        margin-top: 0px;
+        padding-top: 100px;
+        z-index: 2;
+        max-width: 373px;
+        margin-left: -30px;
+    }
+    .any-question__title {
+        margin-top: 70px;
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .input-contacts__wrapper,
+    .any-question__input-question {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .input-contacts__wrapper {
+        margin-left: 20px;
+    }
+    .input-contacts__input,
+    .input-question__input {
+        font-size: 14px;
+        line-height: 23px;
+        color: #FFFFFF;
+    }
+    .input-contacts__label,
+    .input-question__label {
+        font-size: 13px;
+        line-height: 21px;
+        color: rgba(255, 255, 255, 0.5);
+    }
+    .input-contacts__input {
+        width: 310px;
+    }
+    .input-question__input {
+        width: 310px;
+    }
+    .any-question__input-question {
+        margin-top: 40px;
+    }
+    .input-contacts__input-wrapper {
+        margin-top: 40px;
+    }
+    .input-contacts__input {
+        padding-right: 0px;
+    }
+    .any-question__checkbox {
+        margin-left: -70px;
+    }
+    .any-question__text {
+        margin-left: 5px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .any-question__button-color {
+        width: 320px;
+    }
+
+    /* ! LOCATION-MAP */
+
+    .location {
+        background-image: none;
+        background-color: #131313;
+    }
+    .location__map {
+        display: none;
+    }
+    .location__address::before {
+        content: "";
+        display: block;
+        width: 340px;
+        height: 242px;
+        background-image: url(../img/location/map.png);
+        background-size: 100% 100%;
+        object-fit: fill;
+        margin-top: -50px;
+        margin-bottom: 40px;
+        margin-left: 35px;
+        /* margin-left: 30px; */
+        position: relative;
+        z-index: 3;
+    }
+    .location__address {
+        font-size: 18px;
+        line-height: 25px;
+        margin-left: -30px;
+    }
+    .svg-links__wrapper {
+        padding-bottom: 30px;
+        margin-left: -20px;
+    }
+
+    /* ! FOOTER */
+
+    .footer {
+        display: none;
+    }
+}
+

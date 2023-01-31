@@ -1,0 +1,246 @@
+/* !Используемые шрифты */
+
+/* font-family: 'Nunito Sans', sans-serif;
+font-family: 'Yeseva One', cursive; */
+
+
+/* ! Container */
+
+.container {
+    max-width: 1263px;
+    margin: 0 auto;
+}
+
+/* ! LINK */
+
+.link {
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+}
+
+.link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+/* ! BUTTON */
+
+.button {
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: darkgrey;
+    transition: all 0.2s ease-in;
+    transform: translate(5px);
+}
+
+.checkbox {
+    cursor: pointer;
+}
+
+/* ! HEADER */
+
+
+/* ! SECTION MAIN SCREEN */
+
+
+/* ! SLIDER */
+
+.slider {
+    background: #131313;
+    padding-top: 80px;
+    padding-bottom: 420px;
+}
+
+.slider__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.slider__title {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: #E3B873;
+    padding-top: 70px;
+}
+
+.sleder__paragraph {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+.project-parameters {
+    display: grid;
+    grid-template-columns: 33% 67%;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 30px;
+}
+
+.project-parameter__title {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+.project-parameter__description {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.slider__arrows {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.slider__arrow {
+    transition: 0.5s;
+}
+
+.arrow__left {
+    margin-right: 15px;
+}
+
+.arrow__right {
+    margin-left: 30px;
+}
+
+.arrow__left:hover {
+    transform: translate(-10px);
+}
+
+.arrow__right:hover {
+    transform: translate(10px);
+}
+
+.slider__dots {
+    display: flex;
+}
+
+.slider__dot {
+    margin-left: 15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: 0.3s;
+}
+
+.slider__dot:hover {
+    background-color: #FFFFFF;
+    transition: all 0.3s ease-in;
+}
+
+.slider__dot-active {
+    background-color: #FFFFFF;
+}
+
+.projects__item {
+    list-style: none;
+}
+
+.list__projects {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    padding-left: 0;
+}
+
+.project__item-link {
+    text-decoration: none;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease-in;
+}
+
+.project__item-link-active {
+    text-decoration: underline;
+    color: #E3B873;
+}
+
+.project__item-link:hover {
+    color: #E3B873;
+    transition: all 0.3s ease-in;
+}
+
+.slider__img {
+    object-fit: cover;
+}
+
+.slider__arrow,
+.slider__dot {
+    cursor: pointer;
+}
+
+/* ! ONLINE CONTROL */
+
+/* ! TYPES OF REPAIR */
+
+
+/* ! FANTASIES */
+
+
+/* ! OUR CLIENTS */
+
+
+
+/* ! LOCATION */
+
+/* ! FOOTER */
+
+/* ! ЧЕКБОКСЫ */
+
+.label {
+    cursor: pointer;
+}
+
+.checkbox {
+    display: none;
+}
+
+.empty {
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    background: #E3B873;
+    color: #fff;
+    justify-content: center;
+}
+
+.empty::before{
+    content:"\2714";
+    opacity: 0;
+    transition: .2s;
+}
+
+.checkbox:checked + .empty::before{
+    opacity: 1;
+}
+
+/* ! MEDIA СОЗДАЛ ОТДЕЛЬНЫЙ ФАЙЛ CSS НАЗВАНИЕ MEDIA*/
+
