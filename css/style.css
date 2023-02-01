@@ -143,7 +143,6 @@ font-family: 'Yeseva One', cursive; */
     height: 10px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.3);
-    transition: 0.3s;
 }
 
 .slider__dot:hover {
@@ -189,7 +188,15 @@ font-family: 'Yeseva One', cursive; */
 }
 
 .slider__img {
-    object-fit: cover;
+    display: none;
+}
+
+.active {
+    display: block;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 482px;
 }
 
 .slider__arrow,
@@ -197,50 +204,4 @@ font-family: 'Yeseva One', cursive; */
     cursor: pointer;
 }
 
-/* ! ONLINE CONTROL */
-
-/* ! TYPES OF REPAIR */
-
-
-/* ! FANTASIES */
-
-
-/* ! OUR CLIENTS */
-
-
-
-/* ! LOCATION */
-
-/* ! FOOTER */
-
-/* ! ЧЕКБОКСЫ */
-
-.label {
-    cursor: pointer;
-}
-
-.checkbox {
-    display: none;
-}
-
-.empty {
-    display: inline-flex;
-    width: 18px;
-    height: 18px;
-    background: #E3B873;
-    color: #fff;
-    justify-content: center;
-}
-
-.empty::before{
-    content:"\2714";
-    opacity: 0;
-    transition: .2s;
-}
-
-.checkbox:checked + .empty::before{
-    opacity: 1;
-}
-
-/* ! MEDIA СОЗДАЛ ОТДЕЛЬНЫЙ ФАЙЛ CSS НАЗВАНИЕ MEDIA*/
 
