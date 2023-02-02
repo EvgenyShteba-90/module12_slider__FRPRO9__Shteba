@@ -35,17 +35,28 @@ function initSlider() {
     });
   }
 
+  function changeActiveImageDot(number){
+    sliderDots.querySelector(".slider__dot-active").classList.remove("slider__dot-active");
+    sliderDots.querySelector(`.n${number}`).classList.add("slider__dot-active");
+  }
+  function changeActiveImageLink(number){
+    sliderLinks.querySelector(".project__item-link-active").classList.remove("project__item-link-active");
+    sliderLinks.querySelector(`.n${number}`).classList.add("project__item-link-active"); 
+  }
   function initArrows() {
     sliderArrows.querySelectorAll(".slider__arrow").forEach((arrow) => {
       arrow.addEventListener("click", function () {
         let curNumber = +sliderPicture.querySelector(".active").dataset.index;
         let nextNumber;
+        
         if (arrow.classList.contains("arrow__left")) {
           nextNumber = curNumber === 0 ? images.length - 1 : curNumber - 1;
         } else {
           nextNumber = curNumber === images.length - 1 ? 0 : curNumber + 1;
         }
         moveSlider(nextNumber);
+        changeActiveImageDot(nextNumber)
+        changeActiveImageLink(nextNumber)
       });
     });
   }
@@ -59,8 +70,8 @@ function initSlider() {
     sliderDots.querySelectorAll(".slider__dot").forEach((dot) => {
       dot.addEventListener("click", function () {
         moveSlider(this.dataset.index);
-        sliderDots.querySelector(".slider__dot-active").classList.remove("slider__dot-active");
-        this.classList.add("slider__dot-active");
+        changeActiveImageLink(this.dataset.index)
+        changeActiveImageDot(this.dataset.index)
       });
     });
   }
