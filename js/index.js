@@ -24,7 +24,7 @@ function initSlider() {
   initImages();
   initArrows();
   initDots();
-
+  initLinks()
   function initImages() {
     images.forEach((image, index) => {
       let imageDiv = `<div class="slider__img n${index} 
@@ -60,7 +60,15 @@ function initSlider() {
       });
     });
   }
-
+  function initLinks(){
+    sliderLinks.querySelectorAll(".project__item-link").forEach((link)=>{
+      link.addEventListener("click", function () {
+        moveSlider(this.dataset.index);
+        changeActiveImageLink(this.dataset.index)
+        changeActiveImageDot(this.dataset.index)
+      });
+    })
+  }
   function initDots() {
     images.forEach((image, index) => {
       let dot = `<div class="slider__dot n${index} ${index === 0 ? "slider__dot-active" : ""}"
